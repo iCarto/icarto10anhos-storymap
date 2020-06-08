@@ -5,8 +5,9 @@ var config = {
     showMarkers: true,
     theme: "dark",
     alignment: "left",
-    title: "#iCarto10años en un mapa",
-    subtitle: "Un pequeño recorrido por nuestros 10 años de historia",
+    logo: "./images/logo.png",
+    title: "Un pequeño recorrido por nuestra historia #iCarto10años",
+    //subtitle: "Un pequeño recorrido por nuestros 10 años de historia",
     // byline: 'By a Digital Storyteller',
     footer: "Source: source citations, etc.",
     chapters: [
@@ -14,12 +15,12 @@ var config = {
             id: "la-idea-2009",
             title: "La idea [2009]",
             description:
-                "Algo sobre como surgió la idea, quien estaba dentro. ¿Algo rollo equipo A?",
+                "En el año 2009 un grupo de amigos del laboratorio de Cartografía de la UDC, que formaban un equipo, tuvieron la idea de montar una empresa. Hoy, 10 años más tarde todavía sobreviven. Si tiene algún problema que necesite una solución con tecnología \"Geo\" y se los encuentra, quizás puedan ayudarle.",
             location: {
                 center: [-8.40967, 43.33347],
-                zoom: 17,
-                pitch: 90.0,
-                bearing: 0,
+                zoom: 13,
+                pitch: 100.0,
+                bearing: 45,
             },
             onChapterEnter: [
                 // {
@@ -42,7 +43,7 @@ var config = {
                 "iCarto se fundó un soleado 30 de Junio de 2010, en plena crisis económica, con algo de inconsciencia, pero con mucha mucha ilusión. Las ganas superaron todos los miedos y 10 años más tarde aquí seguimos, con todas las ganas y con menos miedos.",
             location: {
                 center: [-8.40896, 43.34585],
-                zoom: 13,
+                zoom: 14,
                 pitch: 90.0,
                 bearing: 0,
             },
@@ -50,6 +51,7 @@ var config = {
         {
             id: "camino-santiago-2010",
             title: "Camino de Santiago [2010]",
+            image: "./images/camino-santiago.png",
             description:
                 "Trabajamos para la Xunta de Galicia en la publicación de la delimitación oficial del Camino Francés. Un proyecto del que nos sentimos muy orgullosos. Una de las primeras veces de las que tenemos constancia en la que en el DOG se publicó un mapa. Todo un reto.",
             location: {
@@ -62,6 +64,7 @@ var config = {
         {
             id: "eiel-corunha-2010",
             title: "EIEL Coruña [2010]",
+            image: "./images/eiel-corunha.png",
             description:
                 "Primer concurso público que ganamos. La EIEL marcó los principios de iCarto ya que fue un proyecto donde muchas de las personas que fundaron la empresa trabajaron previamente y se formaron en GIS y análisis territorial. Para nosotros fue especial que nada más empezar nuestra aventura pudiésemos liderar completamente la EIEL de Coruña, una de las referentes a nivel nacional.",
             location: {

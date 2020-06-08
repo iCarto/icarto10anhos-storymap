@@ -40,6 +40,7 @@
         width: 90vw;
         padding: 2vh;
         text-align: center;
+        font-family: "ikaros", sans-serif;
       }
       #footer {
         width: 100%;
@@ -141,8 +142,15 @@
 
       var header = document.createElement("div");
 
+      if (config.logo) {
+        var logo = document.createElement("img");
+        logo.setAttribute('src', config.logo);
+        logo.setAttribute('height', '100px');
+        header.appendChild(logo);
+      }
+
       if (config.title) {
-        var titleText = document.createElement("h1");
+        var titleText = document.createElement("h2");
         titleText.innerText = config.title;
         header.appendChild(titleText);
       }
