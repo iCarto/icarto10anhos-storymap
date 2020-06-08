@@ -1,5 +1,5 @@
 var config = {
-    style: "mapbox://styles/icarto/ckb15844h1en41ipfru5i86xj",
+    style: "mapbox://styles/icarto/ckb150abi0rj31ipbw4sfa6oy",
     accessToken:
         "pk.eyJ1IjoiaWNhcnRvIiwiYSI6ImNrYXhyaGh1eDA2cDcycHBpMnltdzJiZDQifQ.keT9u89NkAeuzD7sg0CYWg",
     showMarkers: true,
@@ -14,13 +14,14 @@ var config = {
         {
             id: "la-idea-2009",
             title: "La idea [2009]",
+            image: "./images/the-c-team.png",
             description:
-                "En el año 2009 un grupo de amigos del laboratorio de Cartografía de la UDC, que formaban un equipo, tuvieron la idea de montar una empresa. Hoy, 10 años más tarde todavía sobreviven. Si tiene algún problema que necesite una solución con tecnología \"Geo\" y se los encuentra, quizás puedan ayudarle.",
+                "En el año 2009 un grupo de amigos del laboratorio de Cartografía de la UDC, que formaban un equipo, tuvieron la idea de montar una empresa. Hoy, 10 años más tarde algunos todavía continúan. Si tiene algún problema que necesite una solución con tecnología \"Geo\" y se los encuentra, quizás puedan ayudarle.",
             location: {
                 center: [-8.40967, 43.33347],
                 zoom: 13,
-                pitch: 100.0,
-                bearing: 45,
+                pitch: 60.0,
+                bearing: 30,
             },
             onChapterEnter: [
                 // {
@@ -44,7 +45,7 @@ var config = {
             location: {
                 center: [-8.40896, 43.34585],
                 zoom: 14,
-                pitch: 90.0,
+                pitch: 60.0,
                 bearing: 0,
             },
         },
@@ -55,11 +56,17 @@ var config = {
             description:
                 "Trabajamos para la Xunta de Galicia en la publicación de la delimitación oficial del Camino Francés. Un proyecto del que nos sentimos muy orgullosos. Una de las primeras veces de las que tenemos constancia en la que en el DOG se publicó un mapa. Todo un reto.",
             location: {
-                center: [-7.39105, 42.60364],
-                zoom: 8,
-                pitch: 90.0,
-                bearing: 0,
+                center: [-7.43504, 42.77857],
+                zoom: 9,
+                pitch: 60.0,
+                bearing: -84,
             },
+            onChapterEnter: [
+                {
+                    layer: 'trazado-camino',
+                    opacity: 1.0
+                }
+            ],
         },
         {
             id: "eiel-corunha-2010",
@@ -69,10 +76,20 @@ var config = {
                 "Primer concurso público que ganamos. La EIEL marcó los principios de iCarto ya que fue un proyecto donde muchas de las personas que fundaron la empresa trabajaron previamente y se formaron en GIS y análisis territorial. Para nosotros fue especial que nada más empezar nuestra aventura pudiésemos liderar completamente la EIEL de Coruña, una de las referentes a nivel nacional.",
             location: {
                 center: [-8.65894, 42.9818],
-                zoom: 11,
-                pitch: 90.0,
+                zoom: 8,
+                pitch: 0.0,
                 bearing: 0,
             },
+            onChapterEnter: [
+                {
+                    layer: 'trazado-camino',
+                    opacity: 0.0
+                },
+                {
+                    layer: 'provincia-corunha',
+                    opacity: 0.5
+                }
+            ],
         },
         {
             id: "catastro-mexico-2010",
