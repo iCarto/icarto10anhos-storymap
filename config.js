@@ -102,6 +102,12 @@ var config = {
                 pitch: 90.0,
                 bearing: 0,
             },
+            onChapterEnter: [
+                {
+                    layer: 'provincia-corunha',
+                    opacity: 0.0
+                }
+            ],
         },
         {
             id: "idepo-2011",
