@@ -16,7 +16,8 @@ var config = {
             title: "La idea [2009]",
             image: "./images/the-c-team.png",
             description:
-                "En el año 2009 un grupo de amigos del laboratorio de Cartografía de la UDC, que formaban un equipo, tuvieron la idea de montar una empresa. Hoy, 10 años más tarde algunos todavía continúan. Si tiene algún problema que necesite una solución con tecnología \"Geo\" y se los encuentra, quizás puedan ayudarle.",
+                "En el año 2009 un grupo de amigos del laboratorio de Cartografía de la UDC, que formaban un equipo, tuvieron la idea de montar una empresa. "
+                + "Hoy, 10 años más tarde algunos todavía continúan. Si tiene algún problema que necesite una solución con tecnología \"Geo\" y se los encuentra, quizás puedan ayudarle.",
             location: {
                 center: [-8.40967, 43.33347],
                 zoom: 13,
@@ -41,7 +42,8 @@ var config = {
             title: "Fundación de iCarto [2010]",
             image: "./images/constitucion.jpg",
             description:
-                "iCarto se fundó un soleado 30 de Junio de 2010, en plena crisis económica, con algo de inconsciencia, pero con mucha mucha ilusión. Las ganas superaron todos los miedos y 10 años más tarde aquí seguimos, con todas las ganas y con menos miedos.",
+                "iCarto se fundó un soleado 30 de Junio de 2010, en plena crisis económica, con algo de inconsciencia, pero con mucha mucha ilusión. "
+                + "Las ganas superaron todos los miedos y 10 años más tarde aquí seguimos, con todas las ganas y con menos miedos.",
             location: {
                 center: [-8.40896, 43.34585],
                 zoom: 14,
@@ -54,7 +56,8 @@ var config = {
             title: "Camino de Santiago [2010]",
             image: "./images/camino-santiago.png",
             description:
-                "Trabajamos para la Xunta de Galicia en la publicación de la delimitación oficial del Camino Francés. Un proyecto del que nos sentimos muy orgullosos. Una de las primeras veces de las que tenemos constancia en la que en el DOG se publicó un mapa. Todo un reto.",
+                "Los proyectos relacionados con el Camino de Santiago marcaron los inicios de iCarto. Trabajamos para la Xunta de Galicia en la publicación de la delimitación oficial del Camino Francés. "
+                + "Un proyecto del que nos sentimos muy orgullosos. Una de las primeras veces de las que tenemos constancia en la que en el DOG se publicó un mapa. Todo un reto.",
             location: {
                 center: [-7.43504, 42.77857],
                 zoom: 9,
@@ -67,13 +70,20 @@ var config = {
                     opacity: 1.0
                 }
             ],
+            onChapterExit: [
+                {
+                    layer: 'trazado-camino',
+                    opacity: 0.0
+                }
+            ],
         },
         {
             id: "eiel-corunha-2010",
             title: "EIEL Coruña [2010]",
             image: "./images/eiel-corunha.png",
             description:
-                "Primer concurso público que ganamos. La EIEL marcó los principios de iCarto ya que fue un proyecto donde muchas de las personas que fundaron la empresa trabajaron previamente y se formaron en GIS y análisis territorial. Para nosotros fue especial que nada más empezar nuestra aventura pudiésemos liderar completamente la EIEL de Coruña, una de las referentes a nivel nacional.",
+                "Primer concurso público que ganamos. La EIEL fue otro de los proyectos con un gran vínculo en iCarto, ya que fue un proyecto donde muchas de las personas que fundaron la empresa trabajaron previamente "
+                + "y se formaron en GIS y análisis territorial. Para nosotros fue especial que nada más empezar nuestra aventura pudiésemos liderar completamente la EIEL de Coruña, una de las referentes a nivel nacional.",
             location: {
                 center: [-8.65894, 42.9818],
                 zoom: 8,
@@ -82,44 +92,57 @@ var config = {
             },
             onChapterEnter: [
                 {
-                    layer: 'trazado-camino',
-                    opacity: 0.0
-                },
-                {
                     layer: 'provincia-corunha',
                     opacity: 0.5
                 }
             ],
+            onChapterExit: [
+                {
+                    layer: 'provincia-corunha',
+                    opacity: 0.0
+                }
+            ],
         },
         {
-            id: "catastro-mexico-2010",
-            title: "Catastro México [2010]",
+            id: "catastro-mexico-2011",
+            title: "Catastro México [2011]",
             description:
-                "Primer proyecto internacional fuera del ámbito de la cooperación. Nos contratan como expertos en desarrollo en gvSIG para ayudar a una empresa Mexicana a migrar a software libre una solución de gestión de Catastro.",
+                "En el año 2011 llegó nuestro primer proyecto internacional fuera del ámbito de la cooperación. Nos contratan como expertos en desarrollo en gvSIG "
+                + "para ayudar a una empresa Mexicana a migrar a software libre una solución de gestión de Catastro. Trabajamos intensamente con ellos, incluyendo 15 días en sus oficinas de Mexico D.F., "
+                + "diseñando la solución, ayundándoles a implementarla y capacitando a su equipo para seguir mejorándola.",
             location: {
                 center: [-99.07848, 19.41965],
                 zoom: 11,
                 pitch: 90.0,
                 bearing: 0,
             },
-            onChapterEnter: [
-                {
-                    layer: 'provincia-corunha',
-                    opacity: 0.0
-                }
-            ],
         },
         {
             id: "idepo-2011",
             title: "IDEPO [2011]",
+            image: "./images/idepo.png",
             description:
-                "Nuestra primera IDE. En su momento creamos una IDE con un geoportal pionero para compartir datos de la EIEL. Apostamos por un stack basado en OpenLayers + GeoServer + Postgres/PostGIS que estuvo en producción durante 7 años, sin necesidad de mantenimiento. Hoy día la tecnología del portal ha cambiado, pero sigue manteniendo la misma estructura y organización que diseñamos hace ya 9 años.",
+                "Nuestra primera IDE. En su momento creamos una IDE con un geoportal pionero para compartir datos de la EIEL. "
+                + "Apostamos por un stack basado en OpenLayers + GeoServer + Postgres/PostGIS que estuvo en producción durante 7 años, sin necesidad de mantenimiento. "
+                + "Hoy día la tecnología del portal ha cambiado, pero <a href=\"https://ide.depo.gal/\">sigue manteniendo la misma estructura y organización</a> que diseñamos hace ya 9 años.",
             location: {
                 center: [-8.27339, 42.50602],
-                zoom: 10,
-                pitch: 90.0,
+                zoom: 8,
+                pitch: 0.0,
                 bearing: 0,
             },
+            onChapterEnter: [
+                {
+                    layer: 'provincia-pontevedra',
+                    opacity: 0.5
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'provincia-pontevedra',
+                    opacity: 0.0
+                }
+            ],
         },
         {
             id: "sixhiara-2012",
