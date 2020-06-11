@@ -83,7 +83,8 @@ var config = {
             image: "./images/eiel-corunha.png",
             description:
                 "Primer concurso público que ganamos. La EIEL fue otro de los proyectos con un gran vínculo en iCarto, ya que fue un proyecto donde muchas de las personas que fundaron la empresa trabajaron previamente "
-                + "y se formaron en GIS y análisis territorial. Para nosotros fue especial que nada más empezar nuestra aventura pudiésemos liderar completamente la EIEL de Coruña, una de las referentes a nivel nacional.",
+                + "y se formaron en GIS y análisis territorial. Para nosotros fue especial que nada más empezar nuestra aventura pudiésemos liderar completamente la "
+                + "<a href=\"https://webeiel.dacoruna.gal/es/\">EIEL de Coruña</a>, una de las referentes a nivel nacional.",
             location: {
                 center: [-8.65894, 42.9818],
                 zoom: 8,
@@ -147,20 +148,27 @@ var config = {
         {
             id: "sixhiara-2012",
             title: "SIXHIARA [2012]",
+            image: "./images/sixhiara2012.jpg",
             description:
-                "Primer proyecto que lideramos como Agente de Cooperación, a través de Cooperación Galega aterrizamos en el norte de Mozambique para fortalecer a la administración local en la gestión del Agua a través de los sistemas de información geográfica. Sería el principio de un gran proyecto que nos llevaría por todo el país.",
+                "Primer proyecto que lideramos como Agente de Cooperación. A través de <a href=\"https://cooperacion.xunta.gal\">Cooperación Galega</a> aterrizamos en el norte de Mozambique para fortalecer a la administración "
+                + "local en la gestión del Agua, mediante el uso de los sistemas de información geográfica. Sería el principio de un gran proyecto <a href=\"https://icarto.es/proyecto-sixhiara/\">(SIXHIARA)</a> "
+                + "que nos llevaría por todo el país.",
             location: {
-                center: [40.5514, -12.99335],
-                zoom: 12,
-                pitch: 90.0,
-                bearing: 0,
+                center: [40.73283, -12.27589],
+                zoom: 5.39,
+                pitch: 60.0,
+                bearing: 40.80,
             },
         },
         {
             id: "gvsig-2012",
             title: "gvSIG 1.12 [2012]",
+            image: "./images/gvsig.png",
             description:
-                "Con el apoyo de Cartolab y la Asociación gvSIG lideramos la publicación de la versión 1.12 de gvSIG. La última de la rama 1.x que todavía alguna gente sigue usando en sus proyectos.",
+                "Con el apoyo de Cartolab y la Asociación gvSIG <a href=\"https://icarto.es/publicado-gvsig-desktop-1-12/\">lideramos la publicación de la versión 1.12 de gvSIG</a>. La última de la rama 1.x que todavía "
+                + "alguna gente sigue usando en sus proyectos. La apuesta por este proyecto de software libre fue clave en nuestros inicios, contribuímos todo lo que pudimos al núcleo del proyecto, lo que nos generó "
+                + "bastante reconocimiento entre la comunidad, la posibilidad de formar parte del Comité de Dirección Técnica y tener una herramienta base muy potente sobre la que hacer desarrollos a medida "
+                + "para nuestros clientes, aplicando aquello de \"Connect on your similarities. Profit from your differences\".",
             location: {
                 center: [-0.36547, 39.47132],
                 zoom: 12,
@@ -170,33 +178,53 @@ var config = {
         },
         {
             id: "vias-obras-lugo-2012",
-            title: "Vías y Obras Lugo [2012]",
+            title: "VIAL [2012]",
+            image: "./images/vial.png",
             description:
-                "Nuestros primeros trabajos con Referenciación Lineal y Segmentación Dinámica en PostGIS. Hacemos una aplicación con un frontend en gvSIG para la gestión de vías y obras para la Diputación de Lugo. En un momento donde estas técnicas aún estaban poco desarrolladas, creamos nuestra propia solución y <a href='https://icarto.es/participacion-en-el-foss4g-y-sotm-2013/'>la presentamos</a> con bastante éxito en el <a href='http://2013.foss4g.org'>FOSS4G de 2013</a> en Nottingham",
+                "Nuestros primeros trabajos con Referenciación Lineal y Segmentación Dinámica en PostGIS. Hacemos una aplicación (VIAL) con un frontend en gvSIG para la gestión de vías y obras para la Diputación de Lugo. "
+                + "En un momento donde estas técnicas aún estaban poco desarrolladas, creamos nuestra propia solución y <a href='https://icarto.es/participacion-en-el-foss4g-y-sotm-2013/'>la presentamos</a> con "
+                + "bastante éxito en el <a href='http://2013.foss4g.org'>FOSS4G de 2013</a> en Nottingham",
             location: {
-                center: [-7.54349, 43.11201],
-                zoom: 9,
-                pitch: 90.0,
-                bearing: 0,
+                center: [-7.53701, 43.01161],
+                zoom: 9.35,
+                pitch: 60.0,
+                bearing: 0.0,
             },
+            onChapterEnter: [
+                {
+                    layer: 'vias-lugo-3r92o9',
+                    opacity: 0.5
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'vias-lugo-3r92o9',
+                    opacity: 0.0
+                }
+            ],
         },
         {
             id: "primera-trabajadora-remota-2013",
             title: "Primera trabajadora Remota [2013]",
+            image: "./images/mireia.png",
             description:
-                "Mireia se convierte en nuestra primera trabajadora en remoto. A partir de ahí, tendemos hacia una empresa distribuida. Desde entonces hemos ido dando pasos para organizar todos nuestros flujos de trabajo y comunicación pensandolos de forma remota y aún seguimos intentando mejorarlos!",
+                "Mireia se convierte en nuestra primera trabajadora en remoto, desde El Salvador. A partir de ahí, tendemos hacia una empresa distribuida. Desde entonces hemos ido dando pasos para organizar "
+                + "todos nuestros flujos de trabajo y comunicación pensándolos de forma remota. ¡Y aún seguimos intentando mejorarlos!",
             location: {
-                center: [-89.20435, 13.70954],
-                zoom: 12,
-                pitch: 90.0,
-                bearing: 0,
+                center: [-89.25201, 13.69187],
+                zoom: 3.35,
+                pitch: 60.0,
+                bearing: 65.60,
             },
         },
         {
             id: "ocfloss-2014",
             title: "OCFLOSS [2014]",
+            image: "./images/mancomun.jpg",
             description:
-                "De la mano de Igalia una de las compañías de software más molonas de Galicia y el Mundo trabajamos en la Oficina de Software Libre de la Xunta de Galicia, acompañando la liberación de código y la difusión de iniciativas de Software Libre. Es nuestro primer proyecto no GIS, que nos llega por nuestro expertise en el mundo del software libre.",
+                "De la mano de <a href=\"https://www.igalia.com/\">Igalia</a> una de las compañías de software más molonas de Galicia y el Mundo trabajamos en la Oficina de Software Libre de la Xunta de Galicia, "
+                + "acompañando la liberación de código y la difusión de iniciativas de Software Libre. Es nuestro primer proyecto no GIS, que nos llega por nuestro expertise en el mundo del software libre, "
+                + "y en él hacemos cosas diferentes, como generar contenido multimedia, o producir un podcast!",
             location: {
                 center: [-8.53998, 42.8771],
                 zoom: 12,
