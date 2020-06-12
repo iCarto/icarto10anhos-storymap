@@ -186,19 +186,19 @@ var config = {
                 + "bastante éxito en el <a href='http://2013.foss4g.org'>FOSS4G de 2013</a> en Nottingham",
             location: {
                 center: [-7.53701, 43.01161],
-                zoom: 9.35,
-                pitch: 60.0,
+                zoom: 8,
+                pitch: 0.0,
                 bearing: 0.0,
             },
             onChapterEnter: [
                 {
-                    layer: 'vias-lugo-3r92o9',
+                    layer: 'vias-lugo-4iurs2',
                     opacity: 0.5
                 }
             ],
             onChapterExit: [
                 {
-                    layer: 'vias-lugo-3r92o9',
+                    layer: 'vias-lugo-4iurs2',
                     opacity: 0.0
                 }
             ],
@@ -235,8 +235,11 @@ var config = {
         {
             id: "sigeco-2014",
             title: "Sigeco [2014]",
+            video: "https://player.vimeo.com/video/131046534",
             description:
-                "El Proyecto Fortalecimiento REDD+ y Cooperación Sur-Sur de la Comisión Nacional Forestal (CONAFOR), financiado por el PNUD, desarrolló a través de una consultoría una Plataforma de información geográfica para la gestión territorial interinstitucional, que servirá para planificar y dar seguimiento a los incentivos locales para reducir la deforestación y degradación forestal. Nuestra segunda incursión en México y la primera licitación internacional que ganamos, en colaboración con la Asociación gvSIG.",
+                "Dos años después de nuestra primera visita volvimos a México. Esta vez a través de una licitación internacional en colaboración con la Asociación gvSIG y financiada por el PNUD, a través del "
+                + " proyecto Fortalecimiento REDD+. En este proyecto desarrollamos la <a href=\"https://icarto.es/plataforma-sigeco/\">plataforma SIGECO</a>, que sirve a la Comisión Nacional Forestal (CONAFOR) "
+                + "para planificar y dar seguimiento a los incentivos locales para reducir la deforestación y degradación forestal.",
             location: {
                 center: [-100.74463, 22.12635],
                 zoom: 5,
@@ -270,13 +273,14 @@ var config = {
         },
         {
             id: "cumplimos-5-2015",
-            title: "Y cumplimos 5 [2015]",
+            title: "Y cumplimos 5 años [2015]",
+            image: "./images/5anhos.jpg",
             description:
                 "Cumplimos nuestros primeros 5 años de vida. Hasta ese momento por iCarto han pasado 12 personas, alcanzamos casi las 50.000 horas de trabajo en 39 proyectos, distribuidos en 9 países… y lo celebramos.",
             location: {
                 center: [-8.40676, 43.34853],
                 zoom: 18,
-                pitch: 90.0,
+                pitch: 60.0,
                 bearing: 0,
             },
         },
@@ -295,13 +299,15 @@ var config = {
         {
             id: "primer-icartinho-2018",
             title: "El primer iCartiño [2018]",
+            image: "./images/primer-icartinho.jpg",
             description:
-                "No era la primera vez que las socias de iCarto hacíamos un retiro espiritual para “hablar de nuestras cosas”. Pero es la primera vez que le ponemos nombre y se convierte en algo fijo en nuestro calendario anual.",
+                "No era la primera vez que las socias de iCarto hacíamos un retiro espiritual para \“hablar de nuestras cosas\”. Pero es la primera vez que le ponemos nombre y se convierte en algo fijo en nuestro "
+                + "calendario anual.",
             location: {
-                center: [-8.81668, 42.64768],
-                zoom: 15,
-                pitch: 90.0,
-                bearing: 0,
+                center: [-8.82082, 42.64824],
+                zoom: 11.73,
+                pitch: 60.0,
+                bearing: -84.80,
             },
         },
         {
@@ -319,38 +325,65 @@ var config = {
         {
             id: "segundo-icartino-2019",
             title: "El primer iCartiño de socias y trabajadoras [2019]",
+            image: "./images/nuevo-icartinho.jpg",
             description:
                 "Le damos un pequeño giro al iCartiño. Se convierte en un evento más lúdico para personas socias, trabajadoras y sus familias, un fin de semana de convivencia para compartir espacio fuera del trabajo.",
             location: {
-                center: [-8.00979, 42.91361],
-                zoom: 16,
-                pitch: 90.0,
-                bearing: 0,
+                center: [-8.00856, 42.93324],
+                zoom: 9.16,
+                pitch: 60.0,
+                bearing: -29.60,
             },
         },
         {
             id: "innovacion-aecid-2018",
-            title: "Innovación AECID [2018, 2019]",
+            title: "Innovación AECID [2019]",
+            image: "./images/aigar.png",
             description:
-                "No era la primera vez que trabajabamos con Ingeniería Sin Fronteras Cataluña pero si la primera que presentábamos un proyecto como socios a la convocatoria de proyectos de innovación de la AECID. Gracias a esta financiación desarrollamos una aplicación móvil y escritorio AIGAR, para la gestión de sistemas de agua rurales.",
+                "No era la primera vez que trabajabamos con Ingeniería Sin Fronteras Cataluña pero si la primera que presentábamos un proyecto como socios a la convocatoria de proyectos de innovación de la AECID. "
+                + "Gracias a esta financiación desarrollamos una plataforma para la gestión de sistemas de agua rurales (<a href=\"https://icarto.es/aigar/\">AIGAR</a>), formada por una aplicación Web/Escritorio "
+                + "y una aplicación móvil para las lecturas.",
             location: {
-                center: [-89.31855, 13.50686],
-                zoom: 14,
-                pitch: 90.0,
+                center: [-89.32239, 13.49293],
+                zoom: 7.37,
+                pitch: 0.0,
                 bearing: 0,
             },
         },
         {
             id: "utentes-2020",
             title: "SIRHA: Utentes [2020]",
+            image: "./images/sirha.jpg",
             description:
-                "Con el apoyo de la DWA holandesa (https://dutchwaterauthorities.com/) el SIRHA (Sistema de Información del Recurso Hídrico para ARAs) es implementado en el ARA Centro y el ARA Centro-Norte. Con ello todas las ARAs de Mozambique cuentan con el mismo sistema integral para la gestión de licencias de uso de agua. Lo que empezamos como un proyecto pequeño en el norte del país en 2012 se convierte en todo un sistema de gestión a nivel nacional.",
+                "Con el apoyo de la <a href=\"https://dutchwaterauthorities.com/\">DWA holandesa</a> el SIRHA (Sistema de Información del Recurso Hídrico para ARAs) es implementado en el ARA Centro y el ARA Centro-Norte. "
+                + "Con ello todas las ARAs de Mozambique cuentan con el mismo sistema integral para la gestión de licencias de uso de agua. Lo que empezamos como un proyecto pequeño en el norte del país en 2012 "
+                + "se convierte así en todo un sistema de gestión a nivel nacional.",
             location: {
-                center: [35.87036, -19.09327],
-                zoom: 6,
-                pitch: 90.0,
+                center: [35.75320, -18.91574],
+                zoom: 4.7,
+                pitch: 0.0,
                 bearing: 0,
             },
+            onChapterEnter: [
+                {
+                    layer: 'aras-aryvv1',
+                    opacity: 1.0
+                },
+                {
+                    layer: 'aras-7xyvw8',
+                    opacity: 0.5
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'aras-aryvv1',
+                    opacity: 0.0
+                },
+                {
+                    layer: 'aras-7xyvw8',
+                    opacity: 0.0
+                }
+            ],
         },
         {
             id: "elias-socio-2020",
@@ -361,6 +394,48 @@ var config = {
                 center: [-7.58582, 42.45986],
                 zoom: 15,
                 pitch: 90.0,
+                bearing: 0,
+            },
+        },
+        {
+            id: "audasa-2020",
+            title: "SIGA, nuestro proyecto franquicia [2010 - 2020]",
+            image: "./images/siga.jpg",
+            description:
+                "Al <a href=\"https://icarto.es/sistema-siga/\">proyecto SIGA</a> lo llamamos nuestro proyecto franquicia porque nos ha acompañado todos estos años, desde la fundación de iCarto, y todavía continúa vivo. "
+                + "Junto a nuestro cliente AUDASA hemos ido diseñando "
+                + "y perfeccionando un completo sistema de gestión para una autopista, tomando como eje fundamental la información geográfica. Un proyecto lleno de retos que comenzó con un GIS de escritorio "
+                + "personalizado y que hoy cuenta además con dos bases de datos geográficas en localizaciones físicas diferentes que se sincronizan entre sí, 2 geoservers, o una aplicación de gestión de expedientes "
+                + "y gestión documental de creación propia.",
+            location: {
+                center: [-8.42062, 42.99572],
+                zoom: 7.45,
+                pitch: 0.0,
+                bearing: 0,
+            },
+            onChapterEnter: [
+                {
+                    layer: 'autopistas-8lq2gl',
+                    opacity: 0.5
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'autopistas-8lq2gl',
+                    opacity: 0.0
+                }
+            ],
+        },
+        {
+            id: "despedida-2020",
+            title: "#iCarto10años [2020]",
+            image: "./images/logo.png",
+            description:
+                "Y cumplimos 10 años... ",
+            location: {
+                center: [-8.40676, 43.34853],
+                zoom: 18,
+                pitch: 60.0,
                 bearing: 0,
             },
         },
