@@ -9,7 +9,8 @@ var config = {
     title: "Un pequeño recorrido por nuestra historia #iCarto10años",
     //subtitle: "Un pequeño recorrido por nuestros 10 años de historia",
     // byline: 'By a Digital Storyteller',
-    footer: "Source: source citations, etc.",
+    footer: "<a href=\"https://icarto.es\">iCarto</a> - <a href=\"https://twitter.com/hashtag/iCarto10a%C3%B1os?src=hash&f=live\">#iCarto10años</a> - "
+    + "<a href=\"https://www.youtube.com/playlist?list=PLRcNgXUv_UCzKnQkZv-fPb_1CIlONw6Kz\">#conociendoiCartians</a>",
     chapters: [
         {
             id: "la-idea-2009",
@@ -107,6 +108,7 @@ var config = {
         {
             id: "catastro-mexico-2011",
             title: "Catastro México [2011]",
+            image: "./images/catastro.png",
             description:
                 "En el año 2011 llegó nuestro primer proyecto internacional fuera del ámbito de la cooperación. Nos contratan como expertos en desarrollo en gvSIG "
                 + "para ayudar a una empresa Mexicana a migrar a software libre una solución de gestión de Catastro. Trabajamos intensamente con ellos, incluyendo 15 días en sus oficinas de Mexico D.F., "
@@ -262,13 +264,15 @@ var config = {
         {
             id: "gira-eeuu-2014",
             title: "Gira por EEUU  [2014, 2015]",
+            image: "./images/commons-lab.png",
             description:
-                "Nuestros primeros proyectos con CARTO para clientes de Estados Unidos. Colaboramos en hacer Treekit, una aplicación para el inventariado de árboles, multi-ciudad. Y en implementar Common Labs Inventory una aplicación web para registrar iniciativas de Ciencia Ciudadana del Wilson Center.",
+                "Nuestros primeros proyectos con <a href=\"https://carto.com/\">CARTO</a> para clientes de Estados Unidos. Colaboramos en hacer Treekit, una aplicación para el inventariado de árboles, multi-ciudad. "
+                + "Y en implementar Common Labs Inventory una aplicación web para registrar iniciativas de Ciencia Ciudadana del Wilson Center.",
             location: {
-                center: [-99.68994, 39.55488],
-                zoom: 5,
-                pitch: 90.0,
-                bearing: 0,
+                center: [-76.93000, 38.96187],
+                zoom: 7.69,
+                pitch: 60.0,
+                bearing: 47.74,
             },
         },
         {
@@ -285,10 +289,11 @@ var config = {
             },
         },
         {
-            id: "primeras-contrataciones-2017",
-            title: "Primeros procesos de contratación [2017]",
+            id: "primeras-contrataciones-2016",
+            title: "Primeros procesos de contratación [2016]",
+            image: "./images/contratacion.png",
             description:
-                "Aunque suene extraño, no es hasta 2017 cuando creamos nuestra primera oferta de empleo pública. Hasta ese momento se han ido incorporando a iCarto gente del ámbito de CartoLab o personas con las que ya habíamos colaborado anteriormente. Por primera vez hacemos un proceso de contratación público y alguien de fuera de nuestra órbita' entra en la empresa. Aunque no parezca un hecho remarcable, para nosotros supuso un reto abrirnos paso en un mercado laboral del ámbito tecnológico donde la oferta era y es muy grande. Nuestra apuesta: Nuestra filosofía de empresa.",
+                "Aunque suene extraño, no es hasta 2016 cuando creamos nuestra primera oferta de empleo pública. Hasta ese momento se han ido incorporando a iCarto gente del ámbito de CartoLab o personas con las que ya habíamos colaborado anteriormente. Por primera vez hacemos un proceso de contratación público y alguien de fuera de nuestra órbita' entra en la empresa. Aunque no parezca un hecho remarcable, para nosotros supuso un reto abrirnos paso en un mercado laboral del ámbito tecnológico donde la oferta era y es muy grande. Nuestra apuesta: Nuestra filosofía de empresa.",
             location: {
                 center: [-8.40676, 43.34853],
                 zoom: 18,
@@ -313,8 +318,10 @@ var config = {
         {
             id: "ourol-2018",
             title: "Ourol [2018]",
+            image: "./images/ourol.png",
             description:
-                "Trabajamos con el Ayuntamiento de Ourol en la elaboración del epígrafe de vías del Inventario de Bienes Municipales. Es nuestro primer inventario de este tipo para lo que desarrollamos una metodología propia de toma de datos y desarrollamos una aplicación web.",
+                "Trabajamos con el Ayuntamiento de Ourol en la elaboración del epígrafe de vías del Inventario de Bienes Municipales. Es nuestro primer inventario de este tipo para lo que desarrollamos una metodología "
+                + "propia de toma de datos y desarrollamos una aplicación web.",
             location: {
                 center: [-7.64313, 43.56515],
                 zoom: 15,
@@ -388,13 +395,14 @@ var config = {
         {
             id: "elias-socio-2020",
             title: "Primera persona socia fuera de la órbita de iCarto [2020]",
+            video: "https://www.youtube.com/embed/Txwjj1j59hg",
             description:
                 "Elías es la primera persona socia de iCarto de fuera de nuestro círculo cercano. Hasta este momento las personas que habían entrado como socias o habían pertenecido a CartoLab o habían colaborado con iCarto y tenían vínculos personales con alguna de las socias. Elías es la primera persona que llega a iCarto a través de una oferta de empleo, sin ningún contacto previo con la empresa, y que después de un tiempo como trabajador pasa a ser socio de la misma.",
             location: {
-                center: [-7.58582, 42.45986],
-                zoom: 15,
-                pitch: 90.0,
-                bearing: 0,
+                center: [-7.60798, 42.48938],
+                zoom: 9.45,
+                pitch: 60.0,
+                bearing: -28.80,
             },
         },
         {
@@ -431,7 +439,9 @@ var config = {
             title: "#iCarto10años [2020]",
             image: "./images/logo.png",
             description:
-                "Y cumplimos 10 años... ",
+                "Y cumplimos 10 años... los aniversarios son puntos congelados de una línea temporal, que sirven para evaluar el antes y el después. Mirando hacia atrás nos sentimos afortunadas por los trabajos realizados "
+                + "y por todas las personas que se han cruzado en nuestro camino, socias, trabajadoras, clientes y colaboradoras. Mirando al futuro no podemos estar más que ansiosas y optimistas por ver lo que nos "
+                + "deparará. Por muchos otros 10 años de iCarto. GRACIAS!!",
             location: {
                 center: [-8.40676, 43.34853],
                 zoom: 18,
