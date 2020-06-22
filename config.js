@@ -2,7 +2,7 @@ var config = {
     style: "mapbox://styles/icarto/ckb150abi0rj31ipbw4sfa6oy",
     accessToken:
         "pk.eyJ1IjoiaWNhcnRvIiwiYSI6ImNrYXhyaGh1eDA2cDcycHBpMnltdzJiZDQifQ.keT9u89NkAeuzD7sg0CYWg",
-    showMarkers: true,
+    showMarkers: false,
     theme: "dark",
     alignment: "left",
     logo: "./images/logo.png",
@@ -20,22 +20,30 @@ var config = {
                 "En el año 2009 un grupo de amigos del laboratorio de Cartografía de la UDC, que formaban un equipo, tuvieron la idea de montar una empresa. "
                 + "Hoy, 10 años más tarde algunos todavía continúan. Si tiene algún problema que necesite una solución con tecnología \"Geo\" y se los encuentra, quizás puedan ayudarle.",
             location: {
-                center: [-8.40967, 43.33347],
-                zoom: 13,
-                pitch: 60.0,
-                bearing: 30,
+                center: [-8.41461, 43.33328],
+                zoom: 15.52,
+                pitch: 0.0,
+                bearing: 0,
             },
             onChapterEnter: [
-                // {
-                //     layer: '',
-                //     opacity: 0.5
-                // }
+                {
+                    layer: 'caminos-udc-etiqueta',
+                    opacity: 1.0
+                },
+                {
+                    layer: 'caminos-udc',
+                    opacity: 0.5
+                }
             ],
             onChapterExit: [
-                // {
-                //     layer: '',
-                //     opacity: 0.5
-                // }
+                {
+                    layer: 'caminos-udc-etiqueta',
+                    opacity: 0.0
+                },
+                {
+                    layer: 'caminos-udc',
+                    opacity: 0.0
+                }
             ],
         },
         {
@@ -51,6 +59,18 @@ var config = {
                 pitch: 60.0,
                 bearing: 0,
             },
+            onChapterEnter: [
+                {
+                    layer: 'icarto',
+                    opacity: 1.0
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'icarto',
+                    opacity: 0.0
+                }
+            ],
         },
         {
             id: "camino-santiago-2010",
@@ -156,11 +176,31 @@ var config = {
                 + "local en la gestión del Agua, mediante el uso de los sistemas de información geográfica. Sería el principio de un gran proyecto <a href=\"https://icarto.es/proyecto-sixhiara/\">(SIXHIARA)</a> "
                 + "que nos llevaría por todo el país.",
             location: {
-                center: [40.73283, -12.27589],
-                zoom: 5.39,
-                pitch: 60.0,
-                bearing: 40.80,
+                center: [35.75320, -18.91574],
+                zoom: 4.7,
+                pitch: 0.0,
+                bearing: 0,
             },
+            onChapterEnter: [
+                {
+                    layer: 'aras-norte-text',
+                    opacity: 1.0
+                },
+                {
+                    layer: 'aras-norte',
+                    opacity: 0.5
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'aras-norte',
+                    opacity: 0.0
+                },
+                {
+                    layer: 'aras-norte-text',
+                    opacity: 0.0
+                }
+            ],
         },
         {
             id: "gvsig-2012",
@@ -196,11 +236,19 @@ var config = {
                 {
                     layer: 'vias-lugo-4iurs2',
                     opacity: 0.5
+                },
+                {
+                    layer: 'lugo-7x8om1',
+                    opacity: 0.25
                 }
             ],
             onChapterExit: [
                 {
                     layer: 'vias-lugo-4iurs2',
+                    opacity: 0.0
+                },
+                {
+                    layer: 'lugo-7x8om1',
                     opacity: 0.0
                 }
             ],
@@ -213,11 +261,23 @@ var config = {
                 "Mireia se convierte en nuestra primera trabajadora en remoto, desde El Salvador. A partir de ahí, tendemos hacia una empresa distribuida. Desde entonces hemos ido dando pasos para organizar "
                 + "todos nuestros flujos de trabajo y comunicación pensándolos de forma remota. ¡Y aún seguimos intentando mejorarlos!",
             location: {
-                center: [-89.25201, 13.69187],
-                zoom: 3.35,
-                pitch: 60.0,
-                bearing: 65.60,
+                center: [-48.65670, 34.32514],
+                zoom: 3.22,
+                pitch: 0.0,
+                bearing: 0,
             },
+            onChapterEnter: [
+                {
+                    layer: 'corunha-salvador-108pbj',
+                    opacity: 1.0
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'corunha-salvador-108pbj',
+                    opacity: 0.0
+                }
+            ],
         },
         {
             id: "ocfloss-2014",
@@ -243,15 +303,27 @@ var config = {
                 + " proyecto Fortalecimiento REDD+. En este proyecto desarrollamos la <a href=\"https://icarto.es/plataforma-sigeco/\">plataforma SIGECO</a>, que sirve a la Comisión Nacional Forestal (CONAFOR) "
                 + "para planificar y dar seguimiento a los incentivos locales para reducir la deforestación y degradación forestal.",
             location: {
-                center: [-100.74463, 22.12635],
-                zoom: 5,
-                pitch: 90.0,
+                center: [-108.10281, 21.58766],
+                zoom: 4.20,
+                pitch: 0.0,
                 bearing: 0,
             },
+            onChapterEnter: [
+                {
+                    layer: 'estados-redd',
+                    opacity: 0.5
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'estados-redd',
+                    opacity: 0.0
+                }
+            ],
         },
         {
             id: "empresa-2014",
-            title: "La empresa para quien la trabaje [2014]",
+            title: "La empresa para los socios trabajadores [2014]",
             description:
                 "Un cambio de filosofía trascendental para nosotros. Sólo quienes trabajen en la empresa pueden ser socias.",
             location: {
@@ -260,6 +332,18 @@ var config = {
                 pitch: 90.0,
                 bearing: 0,
             },
+            onChapterEnter: [
+                {
+                    layer: 'icarto',
+                    opacity: 1.0
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'icarto',
+                    opacity: 0.0
+                }
+            ],
         },
         {
             id: "gira-eeuu-2014",
@@ -287,19 +371,45 @@ var config = {
                 pitch: 60.0,
                 bearing: 0,
             },
+            onChapterEnter: [
+                {
+                    layer: 'icarto',
+                    opacity: 1.0
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'icarto',
+                    opacity: 0.0
+                }
+            ],
         },
         {
             id: "primeras-contrataciones-2016",
             title: "Primeros procesos de contratación [2016]",
             image: "./images/contratacion.png",
             description:
-                "Aunque suene extraño, no es hasta 2016 cuando creamos nuestra primera oferta de empleo pública. Hasta ese momento se han ido incorporando a iCarto gente del ámbito de CartoLab o personas con las que ya habíamos colaborado anteriormente. Por primera vez hacemos un proceso de contratación público y alguien de fuera de nuestra órbita' entra en la empresa. Aunque no parezca un hecho remarcable, para nosotros supuso un reto abrirnos paso en un mercado laboral del ámbito tecnológico donde la oferta era y es muy grande. Nuestra apuesta: Nuestra filosofía de empresa.",
+                "Aunque suene extraño, no es hasta 2016 cuando creamos nuestra primera oferta de empleo pública. Hasta ese momento se han ido incorporando a iCarto gente del ámbito de CartoLab o personas "
+                + "con las que ya habíamos colaborado anteriormente. Por primera vez hacemos un proceso de contratación público y alguien de fuera de nuestra \"órbita\" entra en la empresa. Aunque no parezca "
+                + "un hecho remarcable, para nosotros supuso un reto abrirnos paso en un mercado laboral del ámbito tecnológico donde la oferta era y es muy grande. Nuestra apuesta: Nuestra filosofía de empresa.",
             location: {
                 center: [-8.40676, 43.34853],
                 zoom: 18,
                 pitch: 90.0,
                 bearing: 0,
             },
+            onChapterEnter: [
+                {
+                    layer: 'icarto',
+                    opacity: 1.0
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'icarto',
+                    opacity: 0.0
+                }
+            ],
         },
         {
             id: "primer-icartinho-2018",
@@ -399,10 +509,10 @@ var config = {
             description:
                 "Elías es la primera persona socia de iCarto de fuera de nuestro círculo cercano. Hasta este momento las personas que habían entrado como socias o habían pertenecido a CartoLab o habían colaborado con iCarto y tenían vínculos personales con alguna de las socias. Elías es la primera persona que llega a iCarto a través de una oferta de empleo, sin ningún contacto previo con la empresa, y que después de un tiempo como trabajador pasa a ser socio de la misma.",
             location: {
-                center: [-7.60798, 42.48938],
-                zoom: 9.45,
+                center: [-7.59926, 42.44083],
+                zoom: 12.76,
                 pitch: 60.0,
-                bearing: -28.80,
+                bearing: -101.60,
             },
         },
         {
@@ -448,6 +558,18 @@ var config = {
                 pitch: 60.0,
                 bearing: 0,
             },
+            onChapterEnter: [
+                {
+                    layer: 'icarto',
+                    opacity: 1.0
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'icarto',
+                    opacity: 0.0
+                }
+            ],
         },
     ],
 };
