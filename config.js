@@ -170,7 +170,8 @@ var config = {
         {
             id: "sixhiara-2012",
             title: "SIXHIARA [2012]",
-            image: "./images/sixhiara2012.jpg",
+            // image: "./images/sixhiara2012.jpg",
+            video: "https://www.youtube.com/embed/nejmhFhbKkE",
             description:
                 "Primer proyecto que lideramos como Agente de Cooperación. A través de <a href=\"https://cooperacion.xunta.gal\">Cooperación Galega</a> aterrizamos en el norte de Mozambique para fortalecer a la administración "
                 + "local en la gestión del Agua, mediante el uso de los sistemas de información geográfica. Sería el principio de un gran proyecto <a href=\"https://icarto.es/proyecto-sixhiara/\">(SIXHIARA)</a> "
@@ -183,7 +184,7 @@ var config = {
             },
             onChapterEnter: [
                 {
-                    layer: 'aras-norte-text',
+                    layer: 'aras-aryvv1',
                     opacity: 1.0
                 },
                 {
@@ -197,7 +198,7 @@ var config = {
                     opacity: 0.0
                 },
                 {
-                    layer: 'aras-norte-text',
+                    layer: 'aras-aryvv1',
                     opacity: 0.0
                 }
             ],
@@ -324,6 +325,7 @@ var config = {
         {
             id: "empresa-2014",
             title: "La empresa para los socios trabajadores [2014]",
+            video: "https://www.youtube.com/embed/fsaufCu7fLs",
             description:
                 "Un cambio de filosofía trascendental para nosotros. Sólo quienes trabajen en la empresa pueden ser socias.",
             location: {
@@ -387,7 +389,8 @@ var config = {
         {
             id: "primeras-contrataciones-2016",
             title: "Primeros procesos de contratación [2016]",
-            image: "./images/contratacion.png",
+            // image: "./images/contratacion.png",
+            video: "https://www.youtube.com/embed/Z1OyIK3mLOc",
             description:
                 "Aunque suene extraño, no es hasta 2016 cuando creamos nuestra primera oferta de empleo pública. Hasta ese momento se han ido incorporando a iCarto gente del ámbito de CartoLab o personas "
                 + "con las que ya habíamos colaborado anteriormente. Por primera vez hacemos un proceso de contratación público y alguien de fuera de nuestra \"órbita\" entra en la empresa. Aunque no parezca "
@@ -433,11 +436,23 @@ var config = {
                 "Trabajamos con el Ayuntamiento de Ourol en la elaboración del epígrafe de vías del Inventario de Bienes Municipales. Es nuestro primer inventario de este tipo para lo que desarrollamos una metodología "
                 + "propia de toma de datos y desarrollamos una aplicación web.",
             location: {
-                center: [-7.64313, 43.56515],
-                zoom: 15,
-                pitch: 90.0,
-                bearing: 0,
+                center: [-7.67877, 43.56701],
+                zoom: 11,
+                pitch: 60.0,
+                bearing: -24.00,
             },
+            onChapterEnter: [
+                {
+                    layer: 'ourol-5oc3r3',
+                    opacity: 0.25
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'ourol-5oc3r3',
+                    opacity: 0.0
+                }
+            ],
         },
         {
             id: "segundo-icartino-2019",
