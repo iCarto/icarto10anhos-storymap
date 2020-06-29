@@ -29,19 +29,11 @@ var config = {
                 {
                     layer: 'caminos-udc-etiqueta',
                     opacity: 1.0
-                },
-                {
-                    layer: 'caminos-udc',
-                    opacity: 0.5
                 }
             ],
             onChapterExit: [
                 {
                     layer: 'caminos-udc-etiqueta',
-                    opacity: 0.0
-                },
-                {
-                    layer: 'caminos-udc',
                     opacity: 0.0
                 }
             ],
