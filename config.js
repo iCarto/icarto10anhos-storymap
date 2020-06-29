@@ -477,7 +477,8 @@ var config = {
         {
             id: "utentes-2020",
             title: "SIRHA: Utentes [2020]",
-            image: "./images/sirha.jpg",
+            // image: "./images/sirha.jpg",
+            video: "https://www.youtube.com/embed/6hJqcLLuF7k",
             description:
                 "Con el apoyo de la <a href=\"https://dutchwaterauthorities.com/\">DWA holandesa</a> el SIRHA (Sistema de Información del Recurso Hídrico para ARAs) es implementado en el ARA Centro y el ARA Centro-Norte. "
                 + "Con ello todas las ARAs de Mozambique cuentan con el mismo sistema integral para la gestión de licencias de uso de agua. Lo que empezamos como un proyecto pequeño en el norte del país en 2012 "
