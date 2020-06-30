@@ -316,7 +316,7 @@ var config = {
         },
         {
             id: "empresa-2014",
-            title: "La empresa para los socios trabajadores [2014]",
+            title: "La empresa para las socias trabajadoras [2014]",
             video: "https://www.youtube.com/embed/fsaufCu7fLs",
             description:
                 "Un cambio de filosofía trascendental para nosotros. Sólo quienes trabajen en la empresa pueden ser socias.",
