@@ -279,7 +279,7 @@ var config = {
             description:
                 "De la mano de <a href=\"https://www.igalia.com/\">Igalia</a> una de las compañías de software más molonas de Galicia y el Mundo trabajamos en la Oficina de Software Libre de la Xunta de Galicia, "
                 + "acompañando la liberación de código y la difusión de iniciativas de Software Libre. Es nuestro primer proyecto no GIS, que nos llega por nuestro expertise en el mundo del software libre, "
-                + "y en él hacemos cosas diferentes, como generar contenido multimedia, o producir un podcast!",
+                + "y en él hacemos cosas diferentes, como generar contenido multimedia, <a href=\"https://www.mancomun.gal/documento/mancomun-podcast-repositorio-dos-programas/\">o producir un podcast!</a>",
             location: {
                 center: [-8.53998, 42.8771],
                 zoom: 12,
